@@ -36,12 +36,6 @@ ArrayList<Flight> flightsDB;
 			
 		}
 		public Collection<ConcreteFlight> getConcreteFlights(String departingCity, String arrivingCity, Date date) {
-				System.out.println(departingCity);
-				System.out.println(arrivingCity);
-				System.out.println(date);
-
-				
-			
 				ArrayList<ConcreteFlight> res = new ArrayList<ConcreteFlight>();
 				for (Flight a : flightsDB) {
 					if ((a.getArrivingCity().equals(arrivingCity))&&(a.getDepartingCity().equals(departingCity)))

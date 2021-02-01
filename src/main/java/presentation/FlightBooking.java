@@ -28,7 +28,6 @@ import javax.swing.JList;
 import javax.swing.border.EmptyBorder;
 
 import domain.ConcreteFlight;
-import domain.Flight;
 
 public class FlightBooking extends JFrame {
 	
@@ -36,7 +35,7 @@ public class FlightBooking extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane= null;
 	private JLabel lblDepartCity = new JLabel("Departing city:");
-	private JLabel jblArrivingCity = new JLabel("Arriving city:");
+	private JLabel lblArrivalCity = new JLabel("Arrival City");
 	private JLabel lblYear = new JLabel("Year:");
 	private JLabel lblRoomType = new JLabel("Room Type:");
 	private JLabel lblMonth = new JLabel("Month:");
@@ -276,7 +275,6 @@ public class FlightBooking extends JFrame {
 		contentPane.add(year);
 		year.setColumns(10);
 		
-		JLabel lblArrivalCity = new JLabel("Arrival City");
 		lblArrivalCity.setBounds(21, 39, 84, 16);
 		contentPane.add(lblArrivalCity);
 		
